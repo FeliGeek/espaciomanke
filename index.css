@@ -1,0 +1,178 @@
+body {
+    background-color: rgb(255, 255, 255);
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+/* Logo y menu*/
+
+nav {
+    background-color: aqua;
+    padding: 15px;
+    border: 10px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 15px 15px black;
+}
+
+.menu {
+
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+    padding-right: 50px;
+}
+
+.menusombra {
+    background-color: aqua;
+    padding: 7px;
+
+    transition: 0.2s;
+}
+
+.menusombra:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px black;
+}
+
+/* Encabezado */
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+}
+
+/* segundo menu */
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 7fr;
+    padding-bottom: 100px;
+}
+
+.segundomenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    border: 10px;
+    margin: 10px;
+}
+
+.segundomenusombra {
+    background-color: aqua;
+    padding: 10px;
+    border: 10px;
+    margin: 30px;
+    padding-left: 25px;
+    transition: 0.2s;
+
+}
+
+.segundomenusombra:hover {
+    box-shadow: 15px 15px black;
+    transform: translateY(-5px);
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+/*footer*/
+
+footer {
+    background-color: aqua;
+    padding: 15px;
+    border: 10px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 15px 15px black;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.2s;
+}
+
+.footer:hover {
+    transform: translateY(-5px);
+    box-shadow: 7px 7px black;
+}
+
+@media only screen and (max-width:500px) {
+    nav {
+        justify-content: center;
+    }
+
+    .menu {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 70%;
+        padding-right: 0px;
+        padding-top: 5px;
+        gap: 50px;
+    }
+
+    h1 {
+    display: flex;
+    font-size: 85px;
+    }
+
+    main {
+    grid-template-columns: 1fr;
+    padding-bottom: 0px;
+    }
+
+    .segundomenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    }
+
+    .segundomenusombra {
+    padding: 30px;
+    margin: 10px;
+    width: 50vh;
+    text-align: center;
+
+    }
+
+    .dibujoescalada {
+        width: 400px;
+        height: auto;
+    }
+
+    footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+    gap: 20px;
+    padding-left: 110px;
+    margin-bottom: 30px;
+    }
+}
