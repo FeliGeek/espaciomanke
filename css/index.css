@@ -64,6 +64,7 @@ main {
     padding: 10px;
     border: 10px;
     margin: 10px;
+    white-space: nowrap;
 }
 
 .segundomenusombra {
@@ -117,7 +118,7 @@ footer {
     box-shadow: 7px 7px black;
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:1000px) {
     nav {
         justify-content: center;
     }
@@ -156,7 +157,7 @@ footer {
     .segundomenusombra {
     padding: 30px;
     margin: 10px;
-    width: 50vh;
+    width: 45vh;
     text-align: center;
 
     }
