@@ -118,6 +118,13 @@ footer {
     box-shadow: 7px 7px black;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
 @media only screen and (max-width:1000px) {
     nav {
         justify-content: center;
