@@ -1,190 +1,104 @@
 body {
-    background-color: rgb(255, 255, 255);
-
+    background-color: white;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
+    display: grid;
+    width: 100%;
+}
+
+
+
+
+nav {
+    padding: 10px;
+    border: 10px;
+    margin: 20px;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    box-shadow: 10px 10px;
+}
+
+.nav1 {
+    display: grid;
+    justify-content: center;
+}
+
+.nav2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    font-size: 20px;
+}
+
+.sombranav2 {
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr;
+    transition: transform 0.3s;
+}
+
+.sombranav2:hover {
+    box-shadow: 4px 4px;
+    transform: scale(1.1); 
+}
+
+.logomanke {
+    height: 130px;
+}
+
+header {
+    text-align: center;
     font-size: 30px;
 }
 
-/* Logo y menu*/
-
-nav {
-    background-color: aqua;
-    padding: 15px;
-    border: 10px;
-    margin: 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    box-shadow: 15px 15px black;
-}
-
-.menu {
-
-    display: flex;
-    align-items: center;
-    gap: 100px;
-
-    padding-right: 50px;
-}
-
-.menusombra {
-    background-color: aqua;
-    padding: 7px;
-
-    transition: 0.2s;
-}
-
-.menusombra:hover {
-    transform: translateY(-5px);
-    box-shadow: 10px 10px black;
-}
-
-/* Encabezado */
-
-h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 100px;
-}
-
-/* segundo menu */
 
 main {
     display: grid;
-    grid-template-columns: 2fr 7fr;
-    padding-bottom: 100px;
+    text-align: center;
 }
 
-.segundomenu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.principal {
+    display: grid;
+    gap: 1px;
+    padding: 25px;
+    padding-top: 0px;
+}
+
+.opciones {
     padding: 10px;
     border: 10px;
     margin: 10px;
-    white-space: nowrap;
-}
-
-.segundomenusombra {
     background-color: aqua;
-    padding: 10px;
-    border: 10px;
-    margin: 30px;
-    padding-left: 25px;
-    transition: 0.2s;
-
+    display: grid;
+    grid-template-columns: 1fr;
+    transition: transform 0.3s;
+    font-size: xx-large;
 }
 
-.segundomenusombra:hover {
-    box-shadow: 15px 15px black;
-    transform: translateY(-5px);
+.opciones:hover {
+    box-shadow: 7px 7px;
+    transform: scale(1.1); 
 }
-
-.imagenes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 10px;
-    padding: 10px;
-    margin: 10px;
-
-}
-
-/*footer*/
 
 footer {
-    background-color: aqua;
-    padding: 15px;
+    padding: 10px;
     border: 10px;
     margin: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    box-shadow: 15px 15px black;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 10px;
+    box-shadow: 10px 10px;
 }
 
 .footer {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: 0.2s;
+    transition: transform 0.3s;
 }
 
 .footer:hover {
-    transform: translateY(-5px);
-    box-shadow: 7px 7px black;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-
-
-@media only screen and (max-width:700px) {
-    nav {
-        justify-content: center;
-        font-size: 32px
-    }
-
-    .menu {
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 70%;
-        padding-right: 0px;
-        padding-top: 5px;
-        gap: 50px;
-    }
-
-    h1 {
-    display: flex;
-    font-size: 80px;
-    text-align: center;
-    }
-
-    main {
-    grid-template-columns: 1fr;
-    padding-bottom: 0px;
-    }
-
-    .segundomenu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    border: 0px;
-    margin: 0px;
-    }
-
-    .segundomenusombra {
-    padding: 30px;
-    margin: 10px;
-    width: 45vh;
-    text-align: center;
-
-    }
-
-    .dibujoescalada {
-        width: 400px;
-        height: auto;
-    }
-
-    .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    border: 10px;
-    margin: 20px;
-    gap: 10px;
-    font-size: 20px;
-    }
+    transform: scale(1.3); 
 }
